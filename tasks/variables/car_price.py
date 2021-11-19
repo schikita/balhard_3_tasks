@@ -23,13 +23,8 @@ DELIVERY_PRICE = 100
 
 
 def car_price(price: float) -> float:
-    """Возвращает стоимость автомобиля с наценками
 
-    :param price: стоимость автомобиля без наценок
-
-    :return: Стоимость автомобиля с наценками
-    """
-    result = None
+    result = price * (TAX/100 + REGISTRATION_FEE/100 + 1) + AGENCY_FEE + DELIVERY_PRICE
     return result
 
 
