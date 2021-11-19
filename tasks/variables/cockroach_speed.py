@@ -11,11 +11,12 @@
 cockroach_speed(1.08) -> 30
 cockroach_speed(2.13) -> 59
 """
-
+import math
 
 def cockroach_speed(kmh_speed: float) -> int:
-    result = kmh_speed * 28
-    return result
+    result = (kmh_speed * 1000 / 36)
+    x= math.floor(result)
+    return x
 
 
 if __name__ == '__main__':
