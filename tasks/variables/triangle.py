@@ -12,21 +12,9 @@ triangle(3, 4) -> (5, 12, 6)
 
 
 def triangle(side_1: int, side_2: int) -> tuple:
-    """
-    Рассчитывает гипотенузу, периметр и площадь
-
-    :param side_1: первый катет
-    :type side_1: int
-
-    :param side_2: второй катет
-    :type side_2: int
-
-    :return: кортеж с параметрами
-    :rtype: tuple
-    """
-    hypotenuse = None
-    perimeter = None
-    square = None
+    hypotenuse = float((side_1 ** 2 + side_2 ** 2) ** .5)
+    perimeter = side_1 + side_2 + float((side_1 ** 2 + side_2 ** 2) ** .5)
+    square = (float(side_1) * float(side_2)) / 2
     return hypotenuse, perimeter, square
 
 

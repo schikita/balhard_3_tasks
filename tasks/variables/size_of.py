@@ -12,14 +12,9 @@ from typing import Any
 
 
 def size_in_kb(some_object: Any) -> str:
-    """Вычисляет размер объекта в кб, округленного до 2 знаков после запятой,
-    и возвращает строку
 
-    :param some_object: любой объект
-    :return: стока вида "1.23 кб"
-    """
-    result = getsizeof(some_object)
-    return result
+    result = getsizeof(some_object) / 1024
+    return round(result)
 
 
 if __name__ == '__main__':
