@@ -13,9 +13,10 @@ cockroach_speed(2.13) -> 59
 """
 import math
 
+
 def cockroach_speed(kmh_speed: float) -> int:
     result = (kmh_speed * 1000 / 36)
-    x= math.floor(result)
+    x = math.floor(result)
     return x
 
 

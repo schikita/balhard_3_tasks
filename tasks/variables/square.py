@@ -12,7 +12,6 @@
 - square(12) -> (48, 144, 16.970562748477143)
 - square(7) -> (28, 49, 9.899494936611665)
 """
-import math
 
 
 def square(side: str) -> tuple:

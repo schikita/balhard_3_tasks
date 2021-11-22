@@ -23,8 +23,7 @@ DELIVERY_PRICE = 100
 
 
 def car_price(price: float) -> float:
-
-    result = price * (TAX/100 + REGISTRATION_FEE/100 + 1) + AGENCY_FEE + DELIVERY_PRICE
+    result = price * (TAX / 100 + REGISTRATION_FEE / 100 + 1) + AGENCY_FEE + DELIVERY_PRICE
     return result
 
 
