@@ -22,8 +22,8 @@ def generate_fio(surname: str, name: str, patronymic: str) -> str:
 
     :return: Фамилия И.О.
     """
-    result = None
-    return result
+
+    return f"{surname.capitalize()} {name[:1].upper()}.{patronymic[:1].upper()}."
 
 
 if __name__ == '__main__':

@@ -33,7 +33,8 @@ def print_recipe() -> str:
     :return: отформатированная строка
     :rtype: str
     """
-    result = None
+    a = ",\n".join(RECIPE)
+    result = f"Рецепт {TITLE}:\n{a}"
     return result
 
 

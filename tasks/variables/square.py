@@ -15,18 +15,11 @@
 
 
 def square(side: str) -> tuple:
-    """Вычисляет периметр, площадь, диагональ квадрата по стороне
-
-    :param side: сторона квадрата
-    :type side: str
-
-    :return: Кортеж (Периметр, Площадь, Диагональ)
-    :rtype: tuple
-    """
-    perimeter = None
-    s_square = None
-    diagonal = None
-    return perimeter, s_square, diagonal
+    perimeter = (float(side) * 4)
+    print(perimeter)
+    s_square = float(side) ** 2
+    diagonal = float(side) * (2 ** .5)
+    return float(perimeter), float(s_square), float(diagonal)
 
 
 if __name__ == '__main__':
