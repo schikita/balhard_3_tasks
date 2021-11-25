@@ -14,7 +14,7 @@ from typing import Any
 def size_in_kb(some_object: Any) -> str:
 
     result = getsizeof(some_object) / 1024
-    return round(result)
+    return round(result, 2)
 
 
 if __name__ == '__main__':
